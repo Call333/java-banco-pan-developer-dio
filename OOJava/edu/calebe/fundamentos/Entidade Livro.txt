@@ -1,0 +1,48 @@
+Loja on-line de livros
+
+Livro {
+// possíveis atributos da entidade Livro
+/*
+- Titulo;
+- Ano de publicação;
+- Tipo de capa;
+- ISBN;
+- Idioma;
+- Tipo de papel;
+- Edição;
+- Quantidade de páginas;
+- Editora;
+- Tema;
+- Assunto;
+- Peso;
+- Gramatúra;
+- Quantidade de capítulos;
+- Dimensões;
+- Sub-Título;
+- Coloração;
+- Acabamento;
+- Autor;
+*/
+// para uma editora por exemplo:
+/* 
+- Autor;
+- Edição;
+- Título;
+- ISBN;
+- Quantidade de páginas;
+- Tipo de capa;
+- Peso;
+- Dimensões
+*/
+// para um consumidor final
+- Assunto;
+- Título;
+- ISBN;
+- Autor;
+- Editora;
+- Quantidade de páginas;
+
+// Quando desenvolver software, sempre pense no tempo atual e não muito mais a frente que isso, pois isso pode gerar
+
+}
+
