@@ -2,8 +2,10 @@ package edu.desafioJavaPOO;
 
 import java.time.LocalDate;
 
+import edu.desafioJavaPOO.bootcamp.Bootcamp;
 import edu.desafioJavaPOO.bootcamp.Conteudo;
 import edu.desafioJavaPOO.bootcamp.Curso;
+import edu.desafioJavaPOO.bootcamp.Dev;
 import edu.desafioJavaPOO.bootcamp.Mentoria;
 
 public class Main {
@@ -22,7 +24,7 @@ public class Main {
         Conteudo conteudo = new Curso();
         conteudo.setTitulo("Curso Python");
         conteudo.setDescricao("Curso para desenvolvimento em python para iniciantes");
-        System.out.println(conteudo);
+        // System.out.println(conteudo);
 
         Mentoria mentoria = new Mentoria();
         mentoria.setTitulo("mentoria java");
@@ -30,8 +32,40 @@ public class Main {
         mentoria.setData(LocalDate.now());
         
 
-        System.out.println(mentoria);
-        System.out.println(curso1);
-        System.out.println(curso2);
+        // System.out.println(mentoria);
+        // System.out.println(curso1);
+        // System.out.println(curso2);
+
+        Bootcamp bootcamp = new Bootcamp();
+        bootcamp.setNome("Bootcamp Java Developer");
+        bootcamp.setDescricao("Descrição Bootcamp Java Developer");
+        bootcamp.getConteudos().add(curso1); 
+        bootcamp.getConteudos().add(curso2);
+        bootcamp.getConteudos().add(mentoria);
+
+        Dev devCamila = new Dev();
+        devCamila.setNome("Camila");
+        devCamila.inscreverBootcamp(bootcamp);
+        System.out.println("Conteudos Inscritos Camila: " + devCamila.getConteudosInscritos());
+        devCamila.progredir();
+        devCamila.progredir();
+        System.out.println("-------");
+        System.out.println("Conteudos Concluídas Camila: " + devCamila.getConteudosConcluidos());
+        System.out.println("\nConteudos Incritos Camila: " + devCamila.getConteudosInscritos());
+        System.out.println("XP: " + devCamila.calcularXp());
+
+        System.out.println("---------");
+
+        Dev devJoão = new Dev();
+        devJoão.setNome("João");
+        devJoão.inscreverBootcamp(bootcamp);
+        System.out.println("Conteudos Incritos João: " + devJoão.getConteudosInscritos());
+        devJoão.progredir();
+        devJoão.progredir();
+        devJoão.progredir();
+        System.out.println("---");
+        System.out.println("Conteudos Concluídos João: " + devJoão.getConteudosConcluidos());
+        System.out.println("\nConteudos Incritos João: " + devJoão.getConteudosInscritos());
+        System.out.println("XP: " + devJoão.calcularXp());
     }
 }
