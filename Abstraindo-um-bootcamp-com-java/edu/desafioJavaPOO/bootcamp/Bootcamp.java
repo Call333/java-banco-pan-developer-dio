@@ -28,10 +28,10 @@ public class Bootcamp {
         this.descricao = descricao;
     }
 
-    public void setDevcsIncritos(Set<Dev> devsIncritos) {
+    public void setDevsIncritos(Set<Dev> devsIncritos) {
         this.devsIncritos = devsIncritos;
     }
-    public Set<Dev> getDevcsIncritos() {
+    public Set<Dev> getDevsIncritos() {
         return devsIncritos;
     }
 
