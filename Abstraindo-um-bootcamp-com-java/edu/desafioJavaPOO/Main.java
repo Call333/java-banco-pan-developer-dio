@@ -2,6 +2,7 @@ package edu.desafioJavaPOO;
 
 import java.time.LocalDate;
 
+import edu.desafioJavaPOO.bootcamp.Conteudo;
 import edu.desafioJavaPOO.bootcamp.Curso;
 import edu.desafioJavaPOO.bootcamp.Mentoria;
 
@@ -17,6 +18,11 @@ public class Main {
         curso2.setTitulo("Curso JavaScript");
         curso2.setDescricao("Descrição do curso JavaScript");
         curso2.setCargaHoraria(12);
+
+        Conteudo conteudo = new Curso();
+        conteudo.setTitulo("Curso Python");
+        conteudo.setDescricao("Curso para desenvolvimento em python para iniciantes");
+        System.out.println(conteudo);
 
         Mentoria mentoria = new Mentoria();
         mentoria.setTitulo("mentoria java");
