@@ -1,0 +1,14 @@
+package dio.primeirospasos.springboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class PrimeirosPasosApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(PrimeirosPasosApplication.class, args);
+
+	}
+
+}
